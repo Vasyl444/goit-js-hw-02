@@ -1,10 +1,10 @@
 "use strict";
 function checkForSpam(message) {
-    const lowerCaseMassege = message.toLowerCase();
-    if (lowerCaseMassege.includes("spam") || lowerCaseMassege.includes("sale")) {
+    const normalizedMessage = message.toLowerCase();
+    if (normalizedMessage.includes("spam") || normalizedMessage.includes("sale")) {
         return true;
     }
-    else { return false};
+    else  return false;
 }
 console.log(checkForSpam("Latest technology news"));
 console.log(checkForSpam("JavaScript weekly newsletter"));
